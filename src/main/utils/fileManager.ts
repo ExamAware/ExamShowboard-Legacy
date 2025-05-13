@@ -22,5 +22,10 @@ export const fileUtils = {
     if (!canceled) filePath = filePaths[0];
     const data = await fs.readFile(filePath);
     return { filePath, data: data.toString() };
+  },
+
+  readLastFile: async (filePath): Promise<IFileInfo> => {
+    const data = await fs.readFile(filePath);
+    return { filePath, data: data.toString() };
   }
 };

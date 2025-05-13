@@ -13,7 +13,10 @@
 [![LICENSE](https://img.shields.io/badge/License-GPL--3.0-red.svg 'LICENSE')](LICENSE)
 [![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C901670561-blue?style=flat&logo=QQ)](https://qm.qq.com/q/zDiEipHsaI)
 [![All Contributors](https://img.shields.io/github/all-contributors/ExamAware/dsz-exam-showboard?color=ee8449)](#贡献者)
-[![Build and Package Electron App](https://github.com/ExamAware/dsz-exam-showboard/actions/workflows/build.yaml/badge.svg)](https://github.com/ExamAware/dsz-exam-showboard/actions/workflows/build.yaml)
+[![Build and Package Electron App](https://github.com/ExamAware/dsz-exam-showboard/actions/workflows/build.yaml/badge.svg)](https://github.com/ExamAware/dsz-exam-showboard/actions/workflows/build.yaml)    
+
+> [!tip]
+> 此仓库的ExamAware已过时，请前往[ExamAware2-Desktop](https://github.com/ExamAware/ExamAware2-Desktop)仓库获取最新版的考试展板。
 
 ![HomePage](/.Screenshots/HomePage.png)
 ![InfoPage](/.Screenshots/InfoPage.png)
@@ -47,23 +50,12 @@
 
 - 下载安装程序并运行
 - 编写 `json` 配置文件
-  - 您可以前往 [ `ExamShowBoardEditor`](https://github.com/ExamAware/DSZExamShowBoardEditor/releases) 或 [`Jursin/exam-config-editor`](https://github.com/Jursin/exam-config-editor) 获取配置文件编辑器
-  - 您可以按照[手动编写 `json` 配置文件](https://github.com/ExamAware/dsz-exam-showboard/tree/master/doc/Manually-write-JSON-configuration-file.md)教程编写配置文件
+  - 您可以前往 [ExamAware 文档](https://docs.examaware.us.kg/app/profile/faq.html)获取编写配置文件的教程
 - 打开软件，进入起始页面，点击 `打开配置` 按钮，选择配置文件
-- 或使用集控（仿照 [`ClassIsland` 集控使用方法](https://docs.classisland.tech/management/tutorial-create-management-config.html)）
-  - 新建 GitHub 公开存储仓库
-  - 上传上面提到的 `exam_config.json` 文件
-  - 复制 `Raw` 直链粘贴到应用 `请求地址` 文本框并保存
+- 或使用[集控](https://docs.examaware.us.kg/management/)      
+- 点击`请求配置`加载配置文件并进入看板（下次可直接点击`直接进入看板`加载上次配置文件）    
 
-> [!tip]
->
-> 可以在 `Raw 文件` 前加上镜像源链接，如
->
-> ```txt
-> https://github.moeyy.xyz/https://raw.githubusercontent.com/{owner}/{repo}/refs/heads/main/exam_config.json
-> ```
-
-- 点击`请求配置`加载配置文件并进入看板（下次可直接点击`直接进入看板`加载上次配置文件）
+[项目文档](https://docs.examaware.us.kg/)
 
 ## 遇到问题
 

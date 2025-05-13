@@ -27,6 +27,12 @@ const ipcWindow = {
       const file = await fileUtils.readFile();
       await window.webContents.send('common:openFile', file);
     });
+
+    ipcMain.on('prog:loadlastjson', async (event, LastJSON) => {
+      const window = BrowserWindow.fromId(event.sender.id);
+      const file = await fileUtils.readLastFile(LastJSON);
+      await window.webContents.send('common:openLastFile', file);
+    });
   }
 };
 

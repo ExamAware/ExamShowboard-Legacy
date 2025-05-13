@@ -22,6 +22,6 @@ const router = useRouter();
 const ipcHandleExit = () => window.electron.ipcRenderer.send('prog:exit');
 
 function gotoHome() {
-  router.push({ path: '/mainWindow', query: { skipAutoEnter: true } });
+  router.push({ path: '/mainWindow', query: { skipAutoEnter: true, skipAutoEnterFetch: true, skipAutoEnterFile: true } });
 }
 </script>

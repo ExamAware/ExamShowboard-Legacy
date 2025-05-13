@@ -10,12 +10,22 @@
             >打开配置</v-btn
           >
           <p class="mt-2 text-center">打开 Json 配置文件</p>
+          <v-switch
+            v-model="autoEnterFile"
+            label="下次自动打开上次的Json配置文件"
+            class="mt-2 auto-enter-switch"
+          ></v-switch>
         </v-card>
       </v-col>
       <v-col cols="12" md="4" class="d-flex flex-column">
         <v-card class="pa-4 fade-in slide-in" outlined>
           <v-btn block color="teal accent-4" dark @click="fetchConfig">请求配置</v-btn>
           <p class="mt-2 text-center">请求并加载配置</p>
+          <v-switch
+            v-model="autoEnterFetch"
+            label="下次自动请求并加载配置"
+            class="mt-2 auto-enter-switch"
+          ></v-switch>
           <v-btn block color="teal accent-4" dark class="mt-2" @click="gotoInfoPage"
             >直接进入看板</v-btn
           >
@@ -50,6 +60,8 @@ const router = useRouter();
 const route = useRoute();
 const remoteUrl = ref(localStorage.getItem('remoteUrl') || '');
 const autoEnter = ref(JSON.parse(localStorage.getItem('autoEnter') || 'false'));
+const autoEnterFetch = ref(JSON.parse(localStorage.getItem('autoEnterFetch') || 'false'));
+const autoEnterFile = ref(JSON.parse(localStorage.getItem('autoEnterFile') || 'false'));
 const errorDialog = ref(false);
 const errorMessage = ref('');
 
@@ -82,11 +94,26 @@ function openDialog() {
   window.electron.ipcRenderer.send('prog:loadjson');
 }
 
+function openLastFile(){
+  const LastJSON = localStorage.getItem("LastJSON") 
+  if (LastJSON) {
+    window.electron.ipcRenderer.send('prog:loadlastjson', LastJSON)
+    }
+  }
+
 function gotoInfoPage() {
   router.push('/infoPage');
 }
 
 window.electron.ipcRenderer.on('common:openFile', (event, message) => {
+  console.log(message.data);
+  localStorage.setItem("LastJSON", message.filePath);
+  const examData = JSON.parse(message.data);
+  globalStore.$patch(examData);
+  router.push('/infoPage');
+});
+
+window.electron.ipcRenderer.on('common:openLastFile', (event, message) => {
   console.log(message.data);
   const examData = JSON.parse(message.data);
   globalStore.$patch(examData);
@@ -101,13 +128,33 @@ onMounted(() => {
 
   // 检查路由参数是否跳过自动跳转
   const skipAutoEnter = route.query.skipAutoEnter === 'true';
-  if (!skipAutoEnter && autoEnter.value) {
-    router.push('/infoPage');
+  const skipAutoEnterFetch = route.query.skipAutoEnterFetch === 'true';
+  const skipAutoEnterFile = route.query.skipAutoEnterFile === 'true';
+  if (!skipAutoEnterFetch && autoEnterFetch.value) {
+    fetchConfig();
+  }
+  else {
+    if (!skipAutoEnterFile && autoEnterFile.value) {
+      openLastFile();
+    }
+    else {
+      if (!skipAutoEnter && autoEnter.value) {
+        router.push('/infoPage')
+      }
+    }
   }
 });
 
 watch(autoEnter, (newVal) => {
   localStorage.setItem('autoEnter', JSON.stringify(newVal));
+});
+
+watch(autoEnterFetch, (newVal) => {
+  localStorage.setItem('autoEnterFetch', JSON.stringify(newVal));
+});
+
+watch(autoEnterFile, (newVal) => {
+  localStorage.setItem('autoEnterFile', JSON.stringify(newVal));
 });
 </script>
 
