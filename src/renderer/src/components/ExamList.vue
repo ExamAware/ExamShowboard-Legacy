@@ -122,7 +122,8 @@ function getStatusColor(item: any): string {
   const now = new Date();
   const startTime = new Date(item.start);
   const endTime = new Date(item.end);
-  if (now < startTime) return 'orange';
+  if (now <  startTime - 15 * 60 * 1000) return 'orange';
+  else if (now < startTime) return 'blue';
   else if (now >= startTime && now <= endTime) return 'green';
   else return 'red';
 }
@@ -131,8 +132,10 @@ function getStatusText(item: any): string {
   const now = new Date();
   const startTime = new Date(item.start);
   const endTime = new Date(item.end);
-  if (now < startTime) {
+  if (now < startTime - 15 * 60 * 1000) {
     return '未开始';
+  } else if (now < startTime) {
+    return '入场中';
   } else if (now >= startTime && now <= endTime) {
     return '进行中';
   } else {

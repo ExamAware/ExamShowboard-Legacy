@@ -49,7 +49,8 @@ const statusColor = computed(() => {
   const start = new Date(props.exam.start);
   const end = new Date(props.exam.end);
 
-  if (now.value < start) return 'status-before';
+  if (now.value < start - 15 * 60 * 1000) return 'status-before';
+  if (now.value < start) return 'status-enter';
   if (now.value >= start && now.value < end) return 'status-middle';
   if (now.value >= end) return 'status-after';
 });
@@ -60,7 +61,8 @@ const statusText = computed(() => {
   const start = new Date(props.exam.start);
   const end = new Date(props.exam.end);
 
-  if (now.value < start) return '未开始';
+  if (now.value < start - 15 * 60 * 1000) return '未开始';
+  if (now.value < start) return '入场中';
   if (now.value >= start && now.value < end) return '进行中';
   if (now.value >= end) return '已结束';
 });
@@ -153,6 +155,10 @@ updateNow();
 
 .status-before {
   color: orange;
+}
+
+.status-enter {
+  color: blue;
 }
 
 .status-middle {
