@@ -1093,10 +1093,10 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.28.0.tgz#cb313feef9ac6e3737067fdf34f42804ac65a6f2"
   integrity sha512-Bvno2/aZT6usSa7lRDL2+hMjVAGjuqaymF1ApZm31JXzniR/hvr14jpU+/z4X6Gt5BPlzosscyJZGUvguXIqeQ==
 
-"@rushstack/eslint-patch@^1.6.1":
-  version "1.10.4"
-  resolved "https://registry.npmmirror.com/@rushstack/eslint-patch/-/eslint-patch-1.10.4.tgz#427d5549943a9c6fce808e39ea64dbe60d4047f1"
-  integrity sha512-WJgX9nzTqknM393q1QJDJmoW28kUfEnybeTfVNcNAPnIx210RXm2DiXiHzfNPJNIUUb1tJnz/l4QGtJ30PgWmA==
+"@rushstack/eslint-patch@^1.11.0":
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.11.0.tgz#75dce8e972f90bba488e2b0cc677fb233aa357ab"
+  integrity sha512-zxnHvoMQVqewTJr/W4pKjF0bMGiKJv1WX7bSrkl46Hg0QjESbzBROWK0Wg4RphzSOS5Jiy7eFimmM3UgMrMZbQ==
 
 "@sentry-internal/browser-utils@8.22.0":
   version "8.22.0"
