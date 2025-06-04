@@ -25,7 +25,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@electron-toolkit/preload": "^3.0.0",
+    "@electron-toolkit/preload": "^3.0.2",
     "@electron-toolkit/utils": "^3.0.0",
     "@mdi/font": "7.0.96",
     "@sentry/vue": "^8.20.0",

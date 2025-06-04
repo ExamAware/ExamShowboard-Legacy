@@ -368,10 +368,10 @@
   resolved "https://registry.npmmirror.com/@electron-toolkit/eslint-config/-/eslint-config-1.0.2.tgz#176f4c7c6f6f030199863e6b767d5caebfda14dd"
   integrity sha512-GJVuMsxBHfVARfmUoSTCHT0e/QfWlVbXcGk3tgoku0ad6tLjydbv2LpvKi02+Sy2WiEz9L9SkGSw090ukT/F0A==
 
-"@electron-toolkit/preload@^3.0.0":
-  version "3.0.1"
-  resolved "https://registry.npmmirror.com/@electron-toolkit/preload/-/preload-3.0.1.tgz#8bae193fd851f3d38c56eec13a5dd602744e8064"
-  integrity sha512-EzoQmpK8jqqU8YnM5jRe0GJjGVJPke2KtANqz8QtN2JPT96ViOvProBdK5C6riCm0j1T8jjAGVQCZLQy9OVoIA==
+"@electron-toolkit/preload@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@electron-toolkit/preload/-/preload-3.0.2.tgz#ee5bb33aba48741c5bc539a9a6faad0be455465e"
+  integrity sha512-TWWPToXd8qPRfSXwzf5KVhpXMfONaUuRAZJHsKthKgZR/+LqX1dZVSSClQ8OTAEduvLGdecljCsoT2jSshfoUg==
 
 "@electron-toolkit/tsconfig@^1.0.1":
   version "1.0.1"
