@@ -1098,86 +1098,59 @@
   resolved "https://registry.npmmirror.com/@rushstack/eslint-patch/-/eslint-patch-1.10.4.tgz#427d5549943a9c6fce808e39ea64dbe60d4047f1"
   integrity sha512-WJgX9nzTqknM393q1QJDJmoW28kUfEnybeTfVNcNAPnIx210RXm2DiXiHzfNPJNIUUb1tJnz/l4QGtJ30PgWmA==
 
-"@sentry-internal/browser-utils@8.22.0":
-  version "8.22.0"
-  resolved "https://registry.npmmirror.com/@sentry-internal/browser-utils/-/browser-utils-8.22.0.tgz#29f35a617ec69d881141decdcdbbe3a777528392"
-  integrity sha512-R0u8KPaSivueIwUOhmYxcisKaJq3gx+I0xOcWoluDB3OI1Ds/QOSP/vmTsMg/mjwG/nUJ8RRM8pj0s8vlqCrjg==
+"@sentry-internal/browser-utils@9.29.0":
+  version "9.29.0"
+  resolved "https://registry.yarnpkg.com/@sentry-internal/browser-utils/-/browser-utils-9.29.0.tgz#514aa0536387ecaf13cec2b12ba246926462a96f"
+  integrity sha512-Wp6UJCDVV2KVK+TG8GwdLZyDy4GtUYDmVhGMpHKPS3G/Qgpf36cY/XHwChwaHZ5P9Bk1sjS9Ok698J59S8L2nw==
   dependencies:
-    "@sentry/core" "8.22.0"
-    "@sentry/types" "8.22.0"
-    "@sentry/utils" "8.22.0"
+    "@sentry/core" "9.29.0"
 
-"@sentry-internal/feedback@8.22.0":
-  version "8.22.0"
-  resolved "https://registry.npmmirror.com/@sentry-internal/feedback/-/feedback-8.22.0.tgz#d6b222ea08d72886b3efbc0760c8cf1f71b3e7fc"
-  integrity sha512-Sy2+v0xBmVnZ5LQ48603CvLy5vVQvAZ+hc9xQSAHexts07NkvApMU1qv26YNwxlAWfDha1wXiW6ryd4YDzaoVA==
+"@sentry-internal/feedback@9.29.0":
+  version "9.29.0"
+  resolved "https://registry.yarnpkg.com/@sentry-internal/feedback/-/feedback-9.29.0.tgz#ae0774267373565ba6bb187595ae19d24b8368d2"
+  integrity sha512-ADvetGrtr+RfYcQKrQxah4fHs/xDJ/VjbStVMSuaNllzwWPYNkWIGFE6YjQ7wZszj0DQIu5/H+B6lZKsFYk4xw==
   dependencies:
-    "@sentry/core" "8.22.0"
-    "@sentry/types" "8.22.0"
-    "@sentry/utils" "8.22.0"
+    "@sentry/core" "9.29.0"
 
-"@sentry-internal/replay-canvas@8.22.0":
-  version "8.22.0"
-  resolved "https://registry.npmmirror.com/@sentry-internal/replay-canvas/-/replay-canvas-8.22.0.tgz#70c5951a9d54f2e814e930fbe0371ab83fee1e72"
-  integrity sha512-/gV8qN3JqWw0LXTMuCGB8RDI8Bx1VESNRBdh/7Cmc5+hxYBfcketuix3S8mHWcE/JO+Ed9g1Abzys6GphTB9LA==
+"@sentry-internal/replay-canvas@9.29.0":
+  version "9.29.0"
+  resolved "https://registry.yarnpkg.com/@sentry-internal/replay-canvas/-/replay-canvas-9.29.0.tgz#0d9ff6a74215ca4dc7f5067970910e41b456d61c"
+  integrity sha512-TrQYhSAVPhyenvu0fNkon7BznFibu1mzS5bCudxhgOWajZluUVrXcbp8Q3WZ3R+AogrcgA3Vy6aumP/+fMKdwg==
   dependencies:
-    "@sentry-internal/replay" "8.22.0"
-    "@sentry/core" "8.22.0"
-    "@sentry/types" "8.22.0"
-    "@sentry/utils" "8.22.0"
+    "@sentry-internal/replay" "9.29.0"
+    "@sentry/core" "9.29.0"
 
-"@sentry-internal/replay@8.22.0":
-  version "8.22.0"
-  resolved "https://registry.npmmirror.com/@sentry-internal/replay/-/replay-8.22.0.tgz#c76bbe4575f8ab478694fe54d4bae87010315d3a"
-  integrity sha512-sF8RyMPJP1fSIyyBDAbtybvKCu0dy8ZAfMwLP7ZqEnWrhZqktVuqM7/++EAFMlD5YaWJXm1IDuOXjgSQjUtSIQ==
+"@sentry-internal/replay@9.29.0":
+  version "9.29.0"
+  resolved "https://registry.yarnpkg.com/@sentry-internal/replay/-/replay-9.29.0.tgz#8d6b46209a2f8dff05e2be5d5ee416ded69cb59f"
+  integrity sha512-we/1JPRje8sNowQCyogOV1OYWuDOP/3XmDi48XoFG2HB0XMl2HfL5LI8AvgAvC/5nrqVAAo4ktbjoVLm1fb7rg==
   dependencies:
-    "@sentry-internal/browser-utils" "8.22.0"
-    "@sentry/core" "8.22.0"
-    "@sentry/types" "8.22.0"
-    "@sentry/utils" "8.22.0"
+    "@sentry-internal/browser-utils" "9.29.0"
+    "@sentry/core" "9.29.0"
 
-"@sentry/browser@8.22.0":
-  version "8.22.0"
-  resolved "https://registry.npmmirror.com/@sentry/browser/-/browser-8.22.0.tgz#ee15b0ef7985732d56d01b62adbbc7b76bcc7ddc"
-  integrity sha512-t3b+/9WWcP9SQTWwrHrB57B33ENgmUjyFlW2+JSlCXkSJBSmAoquPZ/GPjOuPaSr3HIA0mu9uEr4A41d5diASQ==
+"@sentry/browser@9.29.0":
+  version "9.29.0"
+  resolved "https://registry.yarnpkg.com/@sentry/browser/-/browser-9.29.0.tgz#c356e6588ed2509e225c2536b0d7c233ce711f90"
+  integrity sha512-+GFX/yb+rh6V1fSgTYM6ttAgledl2aUR3T3Rg86HNuegbdX8ym6lOtUOIZ0j9jPK015HR47KIPyIZVZZJ7Rj9g==
   dependencies:
-    "@sentry-internal/browser-utils" "8.22.0"
-    "@sentry-internal/feedback" "8.22.0"
-    "@sentry-internal/replay" "8.22.0"
-    "@sentry-internal/replay-canvas" "8.22.0"
-    "@sentry/core" "8.22.0"
-    "@sentry/types" "8.22.0"
-    "@sentry/utils" "8.22.0"
+    "@sentry-internal/browser-utils" "9.29.0"
+    "@sentry-internal/feedback" "9.29.0"
+    "@sentry-internal/replay" "9.29.0"
+    "@sentry-internal/replay-canvas" "9.29.0"
+    "@sentry/core" "9.29.0"
 
-"@sentry/core@8.22.0":
-  version "8.22.0"
-  resolved "https://registry.npmmirror.com/@sentry/core/-/core-8.22.0.tgz#755387b85c1f7d849fb80acd7e8d54ee73ee2853"
-  integrity sha512-fYPnxp7UkY2tckaOtivIySxnJvlbekuxs+Qi6rkUv9JpF+TYKpt7OPNUAbgVIhS0xazAEN6iKTfmnmpUbFRLmQ==
+"@sentry/core@9.29.0":
+  version "9.29.0"
+  resolved "https://registry.yarnpkg.com/@sentry/core/-/core-9.29.0.tgz#99932718454c381dc16bb4240ea35d60c25563e6"
+  integrity sha512-wDyNe45PM+RCGtUn1tK7LzJ08ksv8i8KRUHrst7lsinEfRm83YH+wbWrPmwkVNEngUZvYkHwGLbNXM7xgFUuDQ==
+
+"@sentry/vue@^9.29.0":
+  version "9.29.0"
+  resolved "https://registry.yarnpkg.com/@sentry/vue/-/vue-9.29.0.tgz#2b3dc454964819421bc66b131b3d9822c7cba53e"
+  integrity sha512-wwKHgW2RFpn91UQuClYiI6Tt8VkQ36dGxiVT8l98uGC0uPXzwz40ikdBgnOMt3qwbRZX8ziEXHjjTtAxdETe3w==
   dependencies:
-    "@sentry/types" "8.22.0"
-    "@sentry/utils" "8.22.0"
-
-"@sentry/types@8.22.0":
-  version "8.22.0"
-  resolved "https://registry.npmmirror.com/@sentry/types/-/types-8.22.0.tgz#98bfc8cebd37c93f5afe76c6df97d88116b32127"
-  integrity sha512-1MLK3xO+uF2oJaa+M98aLIrQsEHzV7xnVWPfE3MhejYLNQebj4rQnQKTut/xZNIF9W0Q+bRcakLarC3ce2a74g==
-
-"@sentry/utils@8.22.0":
-  version "8.22.0"
-  resolved "https://registry.npmmirror.com/@sentry/utils/-/utils-8.22.0.tgz#0e4411b19add83f84097fbf9c88423e69b8f6a38"
-  integrity sha512-0ITG2+3EtyMtyc/nQG8aB9z9eIQ4L43nM/KuNgYSnM1vPl/zegbaLT0Ek/xkQB1OLIOLkEPQ6x9GWe+248/n3g==
-  dependencies:
-    "@sentry/types" "8.22.0"
-
-"@sentry/vue@^8.20.0":
-  version "8.22.0"
-  resolved "https://registry.npmmirror.com/@sentry/vue/-/vue-8.22.0.tgz#439a40d6911e213a895e500d3480abbc8b060b26"
-  integrity sha512-oqjy1t5Gy3ZtLleXB3cBnir2qyxO81SNNmaDmAwbCcRq3+4MZpuV+MX/l9A9ftsuTw030ULQQOYaw2dmLoI3DA==
-  dependencies:
-    "@sentry/browser" "8.22.0"
-    "@sentry/core" "8.22.0"
-    "@sentry/types" "8.22.0"
-    "@sentry/utils" "8.22.0"
+    "@sentry/browser" "9.29.0"
+    "@sentry/core" "9.29.0"
 
 "@sindresorhus/is@^4.0.0":
   version "4.6.0"
